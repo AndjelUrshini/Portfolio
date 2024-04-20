@@ -18,3 +18,15 @@ const menuList = document.querySelector('.nav-menu')
 menuIcon.addEventListener('click',()=>{
     menuList.classList.toggle("showNav")
 })
+
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add("animate__fadeInDown");
+//         } else {
+//             entry.target.classList.remove("animate__fadeInDown");
+//         }
+//     });
+// });
+// const hiddenElements = document.querySelectorAll(".hidden");
+// hiddenElements.forEach((el) => observer.observe(el));
