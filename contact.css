@@ -4,6 +4,7 @@
     background-color: var(--white);
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 24px;
 }
 .contact-title{
     text-align: center;
