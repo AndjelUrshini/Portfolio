@@ -1,0 +1,41 @@
+.expertise{
+    width: 100%;
+    min-height: 35vh ;
+    padding-bottom: 24px;
+}
+.expertise-title{
+    text-align: center;
+    margin-top: 32px;
+}
+.expertise-title h1{
+    font-size: max(2vw,24px);
+}
+.expertise-title span{
+    color: var(--blue);
+}
+.expertise-container{
+    max-width: 1440px;
+    padding: 24px;
+    margin: auto;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(8,80px);
+    justify-content: center;
+    gap: 32px;
+}
+.expertise-card{
+    width: 80px;
+    height: 80px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.expertise-card img{
+    width: 100%;
+}
+.expertise-card img:hover{
+    transform: scale(1.05);
+}

@@ -1,0 +1,101 @@
+/* ! Scrollbar Properties */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--gray);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #003d9e;
+  }
+
+/* ! Media Queries */
+@media (max-width:900px){
+    .nav{
+        padding: 12px 12px;
+    }
+    .nav-logo{
+        gap: 12px;
+    }
+    .nav-menu{
+        gap: 16px;
+    }
+    .expertise-container{
+        grid-template-columns: repeat(4,80px);
+        gap: 24px;
+    }
+    .projects-container{
+        grid-template-columns: repeat(2,280px);
+        gap: 16px;
+    }
+}
+@media (max-width:800px){
+    .nav-logo{
+        gap: 8px;
+    }
+    .nav-menu{
+        gap: 8px;
+    }
+    .about-container{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .nav{
+        padding: 12px 12px;
+     }
+     .nav-menu{
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width:0px;
+         display: flex;
+         flex-direction: column;
+         height: 100vh;
+         background-color: var(--white);
+         padding-top: 40px;
+         gap: 24px;
+         overflow: hidden;
+         transition: width 0.3s ease-in-out;
+     }
+     .nav-menu li{
+         width: 100px;
+         margin-left: 12px;
+     }
+     .showNav{
+         width: 260px;
+     }
+     .bx-menu{
+         display: block;
+     }
+     .menu-social{
+         background-color: var(--gray);
+         right: 30px;
+         top: 0px;
+     }
+}
+@media (max-width:600px){
+    .expertise-container{
+        display: grid;
+        grid-template-columns: repeat(3,80px);
+        gap: 12px;
+    }
+    .projects-container{
+        grid-template-columns: repeat(1,280px);
+        gap: 24px;
+    }
+    .input-name-subject{
+        grid-template-columns: repeat(1,260px);
+    }
+    .input-email,
+    .textarea-input textarea{
+        max-width: 260px;
+    }
+    .button-input{
+        margin-bottom: 24px;
+    }
+
+}
